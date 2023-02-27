@@ -2,7 +2,9 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "./pages/Layout";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
+import HelpPage from "./pages/HelpPage";
+import HowItWorksPage from "./pages/HowItWorksPage";
+import ForPartnersPage from "./pages/ForPartnersPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
@@ -11,7 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
+          <Route path="help" element={<HelpPage />} />
+          <Route path="how-it-works" element={<HowItWorksPage />} />
+          <Route path="for-partners" element={<ForPartnersPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

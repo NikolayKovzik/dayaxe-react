@@ -1,0 +1,21 @@
+.header {
+  &__menu {
+    display: none;
+  
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  
+    &-list {
+      width: 300px;
+  
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+  
+    &-link {
+      color: #ffffff;
+    }
+  }
+}

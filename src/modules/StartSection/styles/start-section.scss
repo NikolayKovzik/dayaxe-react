@@ -1,5 +1,5 @@
 .start-section {
-  background-color: #3fb4ed;
+  background-color: var(--default-dark);
 
   &__container {
     height: 540px;
@@ -28,7 +28,7 @@
     }
 
     @media (min-width: 1440px) {
-      box-shadow: inset 0px -70px 70px 120px  #3fb4ed; 
+      box-shadow: inset 0px -70px 70px 120px  var(--default-dark);
     }
   }
 
@@ -38,7 +38,7 @@
     font-size: 36px;
     line-height: 36px;
     font-weight: bold;
-    color: #fff;
+    color: var(--white);
 
     @media (min-width: 768px) {
       margin-bottom: 105px;

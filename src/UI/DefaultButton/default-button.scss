@@ -5,16 +5,16 @@
   font-weight: bold;
 
   &--dark {
-    background: rgb(45, 185, 254);
-    background: linear-gradient(40deg, rgba(45, 185, 254, 1) 0%, rgba(78, 219, 252, 1) 100%);
+    background: var(--default-dark);
+    background: linear-gradient(40deg, var(--default-dark) 0%, var(--btn-gradient) 100%);
 
     border: none;
-    color: #fff;
+    color: var(--white);
   }
 
   &--light {
     background: transparent;
-    border: 2px solid #1EB6FF;
-    color: #1EB6FF;
+    border: 2px solid var(--default-light);
+    color: var(--default-light);
   }
 }

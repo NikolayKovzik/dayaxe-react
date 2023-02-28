@@ -39,7 +39,7 @@
         background-position: 0px 0px;
       }
       @media (min-width: 1440px) {
-        box-shadow: inset 92px 0px 0px 0px #3fb4ed;
+        box-shadow: inset 92px 0px 0px 0px var(--default-dark)
       }
     }
   }
@@ -62,7 +62,7 @@
   &__logo {
     width: 140px;
     height: 32px;
-    fill: #ffffff;
+    fill: var(--white);
   }
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import "./search-form.scss";
 import sprite from "./assets/svg/sprite.svg";
+import DefaultButton from "../../../../UI/DefaultButton";
 
 function SearchForm() {
   return (
@@ -37,14 +38,14 @@ function SearchForm() {
           </div>
         </div>
       </div>
-      <button
-        type="button"
-        className="search-form__submit-btn default-button--dark"
+      <DefaultButton
+        buttonType="submit"
+        className={["search-form__submit-btn", "default-button--dark"]}
       >
         <svg className="search-form__loupe">
           <use href={`${sprite}#search`} />
         </svg>
-      </button>
+      </DefaultButton>
     </form>
   );
 }

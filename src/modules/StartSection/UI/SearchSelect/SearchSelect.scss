@@ -1,0 +1,24 @@
+.search-form {
+  &__select-section {
+    &-inner {
+      width: 100%;
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      @media (min-width: 768px) {
+        padding: 0px 20px;
+      }
+    }
+  
+    &-label {
+      display: block;
+    }
+  }
+
+  &__pin {
+    width: 10px;
+    height: 7px;
+  }
+}

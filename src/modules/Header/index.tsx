@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles/header.scss";
 import sprite from "./assets/svg/sprite.svg";
-import Weather from "../../components/Weather";
-import NavBar from "../../components/NavBar";
-import Hamburger from "../../components/Hamburger";
-import UserBar from "../../components/UserBar";
+import Weather from "./components/Weather";
+import NavBar from "./components/NavBar";
+import Hamburger from "./components/Hamburger";
+import UserBar from "./components/UserBar";
 
 function Header() {
   return (

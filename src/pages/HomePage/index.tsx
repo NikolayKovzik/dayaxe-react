@@ -1,7 +1,8 @@
 import React from "react";
+import StartSection from "../../modules/StartSection";
 
 function HomePage() {
-  return <div>HomePage</div>;
+  return <StartSection />;
 }
 
 export default HomePage;

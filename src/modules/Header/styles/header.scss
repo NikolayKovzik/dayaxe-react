@@ -4,7 +4,9 @@
   left: 0;
   right: 0;
 
-  background-color: #3fb4ed;
+  &--default {
+    background-color: #3fb4ed;
+  }
 
   &__container {
     height: 100px;
@@ -17,23 +19,28 @@
     justify-content: space-between;
     align-items: center;
 
-    background-image: url("~/src/modules/Header/assets/images/first-section-background.png");
-    background-repeat: no-repeat;
-    background-position: -200px 0px;
-    background-size: 1135px;
-
     @media (min-width: 768px) {
       padding-left: 42px;
       padding-right: 42px;
+    }
 
-      background-position: -182px 0px;
-      background-size: 1447px;
-    }
-    @media (min-width: 1024px) {
-      background-position: 0px 0px;
-    }
-    @media (min-width: 1440px) {
-      box-shadow: inset 92px 0px 0px 0px #3fb4ed;
+    &--default {
+      background-image: url("~/src/modules/Header/assets/images/first-section-background.png");
+      background-repeat: no-repeat;
+      background-position: -200px 0px;
+      background-size: 1135px;
+
+      @media (min-width: 768px) {
+        background-position: -182px 0px;
+        background-size: 1447px;
+      }
+
+      @media (min-width: 1024px) {
+        background-position: 0px 0px;
+      }
+      @media (min-width: 1440px) {
+        box-shadow: inset 92px 0px 0px 0px #3fb4ed;
+      }
     }
   }
 

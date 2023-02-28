@@ -6,17 +6,18 @@ import HelpPage from "./pages/HelpPage";
 import HowItWorksPage from "./pages/HowItWorksPage";
 import ForPartnersPage from "./pages/ForPartnersPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import RoutesList from "./routes";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path={RoutesList.default} element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="help" element={<HelpPage />} />
-          <Route path="how-it-works" element={<HowItWorksPage />} />
-          <Route path="for-partners" element={<ForPartnersPage />} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route path={RoutesList.help} element={<HelpPage />} />
+          <Route path={RoutesList.howItWorks} element={<HowItWorksPage />} />
+          <Route path={RoutesList.partners} element={<ForPartnersPage />} />
+          <Route path={RoutesList.notFound} element={<NotFoundPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

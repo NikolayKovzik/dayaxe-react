@@ -7,38 +7,22 @@ import NavBar from "./components/NavBar";
 import Hamburger from "./components/Hamburger";
 import UserBar from "./components/UserBar";
 import RoutesList from "../../routes";
+import classes from "./utils/headerClassList";
 
 function Header() {
   const location = useLocation();
-  const headerClassList = ["header"];
-  const headerContainerClassList = ["header__container"];
-  switch (location.pathname) {
-    case RoutesList.DEFAULT:
-      headerClassList.push("header--default");
-      headerContainerClassList.push("header__container--default");
-      break;
-    case RoutesList.HELP:
-      headerClassList.push("header--help");
-      headerContainerClassList.push("header__container--help");
-      break;
-    case RoutesList.HOW_IT_WORKS:
-      headerClassList.push("header--how-it-works");
-      headerContainerClassList.push("header__container--how-it-works");
-      break;
-    case RoutesList.NOT_FOUND:
-      headerClassList.push("header--not-found");
-      headerContainerClassList.push("header__container--not-found");
-      break;
-    case RoutesList.PARTNERS:
-      headerClassList.push("header--partners");
-      headerContainerClassList.push("header__container--partners");
-      break;
-    default:
-      break;
-  }
+
   return (
-    <header className={headerClassList.join(" ")}>
-      <div className={headerContainerClassList.join(" ")}>
+    <header
+      className={`header ${
+        classes[location.pathname as RoutesList].headerClass
+      }`}
+    >
+      <div
+        className={`header__container ${
+          classes[location.pathname as RoutesList].headerContainerClass
+        }`}
+      >
         <NavLink to={RoutesList.DEFAULT} className="header__logo-link">
           <svg className="header__logo">
             <use href={`${sprite}#logo`} />

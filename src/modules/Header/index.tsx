@@ -47,7 +47,7 @@ function Header() {
         <div className="header__inner">
           <Weather />
           <NavBar />
-          <UserBar />
+          <UserBar name="Roboin Bobin B." src="user-avatar.png" />
           <Hamburger />
         </div>
       </div>

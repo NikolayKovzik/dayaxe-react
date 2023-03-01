@@ -45,7 +45,7 @@ function Header() {
           </svg>
         </NavLink>
         <div className="header__inner">
-          <Weather />
+          <Weather degrees={90} sky="Sunny" spriteId="sunny" />
           <NavBar />
           <UserBar name="Roboin Bobin B." src="user-avatar.png" />
           <Hamburger />

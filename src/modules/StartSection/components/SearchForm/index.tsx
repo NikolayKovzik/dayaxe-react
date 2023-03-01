@@ -15,10 +15,10 @@ function SearchForm() {
           />
         </div>
         <div className="search-form__select-section">
-          <SearchSelect>Jan 12 2009</SearchSelect>
+          <SearchSelect defaultValue="Jan 12 2009" />
         </div>
         <div className="search-form__select-section">
-          <SearchSelect>2 guests</SearchSelect>
+          <SearchSelect defaultValue="2 guests" />
         </div>
       </div>
       <DefaultButton

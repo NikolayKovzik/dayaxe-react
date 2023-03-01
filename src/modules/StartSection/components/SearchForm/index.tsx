@@ -10,7 +10,9 @@ function SearchForm() {
     <form action="" className="search-form">
       <div className="search-form__inner">
         <div className="search-form__input-section">
-          <SearchInput />
+          <SearchInput
+            cities={["Los Angeles, LA", "Newport Beach, CA", "San Diego, CA"]}
+          />
         </div>
         <div className="search-form__select-section">
           <SearchSelect>Jan 12 2009</SearchSelect>

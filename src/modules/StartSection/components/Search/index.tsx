@@ -5,7 +5,17 @@ import SearchForm from "../SearchForm";
 function Search() {
   return (
     <article className="search">
-      <ServicesList />
+      <ServicesList
+        services={[
+          "All",
+          "Day Pass",
+          "Cabanas",
+          "Daybeds",
+          "Spa Passes",
+          "Fitness",
+          "Events",
+        ]}
+      />
       <SearchForm />
     </article>
   );

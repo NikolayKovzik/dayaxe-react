@@ -1,47 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
+import { ServicesListProps } from "./models";
 import "./services-list.scss";
 
-function ServicesList() {
+function ServicesList({ services }: ServicesListProps) {
+  const [activeButtonNumber, setActiveButtonNumber] = useState(0);
   return (
     <ul className="search__services-list">
-      <li className="search__service-item">
-        <button
-          type="button"
-          className="search__service-btn search__service-btn--active"
-        >
-          All
-        </button>
-      </li>
-      <li className="search__service-item">
-        <button type="button" className="search__service-btn">
-          Day Pass
-        </button>
-      </li>
-      <li className="search__service-item">
-        <button type="button" className="search__service-btn">
-          Cabanas
-        </button>
-      </li>
-      <li className="search__service-item">
-        <button type="button" className="search__service-btn">
-          Daybeds
-        </button>
-      </li>
-      <li className="search__service-item">
-        <button type="button" className="search__service-btn">
-          Spa Passes
-        </button>
-      </li>
-      <li className="search__service-item">
-        <button type="button" className="search__service-btn">
-          Fitness
-        </button>
-      </li>
-      <li className="search__service-item">
-        <button type="button" className="search__service-btn">
-          Events
-        </button>
-      </li>
+      {services.map((service, index) => {
+        return (
+          <li className="search__service-item">
+            <button
+              type="button"
+              className={`${
+                index === activeButtonNumber
+                  ? "search__service-btn search__service-btn--active"
+                  : "search__service-btn"
+              }`}
+              onClick={() => setActiveButtonNumber(index)}
+            >
+              {service}
+            </button>
+          </li>
+        );
+      })}
     </ul>
   );
 }

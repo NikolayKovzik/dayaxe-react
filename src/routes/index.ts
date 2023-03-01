@@ -1,9 +1,9 @@
 enum RoutesList {
-  default = "/",
-  help = "/help",
-  howItWorks = "/how-it-works",
-  partners = "/for-partners",
-  notFound = "/*",
+  DEFAULT = "/",
+  HELP = "/help",
+  HOW_IT_WORKS = "/how-it-works",
+  PARTNERS = "/for-partners",
+  NOT_FOUND = "/*",
 }
 
 export default RoutesList;

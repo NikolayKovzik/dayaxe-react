@@ -13,23 +13,23 @@ function Header() {
   const headerClassList = ["header"];
   const headerContainerClassList = ["header__container"];
   switch (location.pathname) {
-    case RoutesList.default:
+    case RoutesList.DEFAULT:
       headerClassList.push("header--default");
       headerContainerClassList.push("header__container--default");
       break;
-    case RoutesList.help:
+    case RoutesList.HELP:
       headerClassList.push("header--help");
       headerContainerClassList.push("header__container--help");
       break;
-    case RoutesList.howItWorks:
+    case RoutesList.HOW_IT_WORKS:
       headerClassList.push("header--how-it-works");
       headerContainerClassList.push("header__container--how-it-works");
       break;
-    case RoutesList.notFound:
+    case RoutesList.NOT_FOUND:
       headerClassList.push("header--not-found");
       headerContainerClassList.push("header__container--not-found");
       break;
-    case RoutesList.partners:
+    case RoutesList.PARTNERS:
       headerClassList.push("header--partners");
       headerContainerClassList.push("header__container--partners");
       break;
@@ -39,7 +39,7 @@ function Header() {
   return (
     <header className={headerClassList.join(" ")}>
       <div className={headerContainerClassList.join(" ")}>
-        <NavLink to={RoutesList.default} className="header__logo-link">
+        <NavLink to={RoutesList.DEFAULT} className="header__logo-link">
           <svg className="header__logo">
             <use href={`${sprite}#logo`} />
           </svg>

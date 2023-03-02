@@ -14,13 +14,13 @@ const classes: HeaderClasses = {
     headerClass: "header--how-it-works",
     headerContainerClass: "header__container--how-it-works",
   },
-  [RoutesList.NOT_FOUND]: {
-    headerClass: "header--not-found",
-    headerContainerClass: "header__container--not-found",
-  },
   [RoutesList.PARTNERS]: {
     headerClass: "header--partners",
     headerContainerClass: "header__container--partners",
+  },
+  [RoutesList.NOT_FOUND]: {
+    headerClass: "header--not-found",
+    headerContainerClass: "header__container--not-found",
   },
 };
 

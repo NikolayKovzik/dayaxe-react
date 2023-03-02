@@ -21,6 +21,14 @@
         border-bottom: 2px solid var(--white);
       }
 
+      &--light {
+        color: var(--white);
+      }
+    
+      &--dark {
+        color: var(--default-dark);
+      }
+
       &--active {
         font-weight: bold;
 

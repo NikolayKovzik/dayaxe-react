@@ -1,5 +1,14 @@
 .weather {
   display: none;
+
+  &--light {
+    color: var(--white);
+  }
+
+  &--dark {
+    color: var(--default-dark);
+  }
+
   @media (min-width: 768px) {
     width: 150px;
 
@@ -8,11 +17,17 @@
     justify-content: center;
     gap: 5px;
 
-    color: var(--white);
-
     &__icon {
       width: 37px;
       height: 37px;
+
+      &--light {
+        fill: var(--white);
+      }
+
+      &--dark {
+        fill: var(--default-dark);
+      }
     }
   }
 }

@@ -39,7 +39,14 @@
   &__logo {
     width: 140px;
     height: 32px;
-    fill: var(--white);
+    
+    &--light {
+      fill: var(--white);
+    }
+    
+    &--dark {
+      fill: var(--default-dark);
+    }
   }
 }
 

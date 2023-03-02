@@ -7,20 +7,26 @@ import HowItWorksPage from "./pages/HowItWorksPage";
 import ForPartnersPage from "./pages/ForPartnersPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import RoutesList from "./routes";
+import { ThemeProvider } from "./context/ThemeProvider";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path={RoutesList.DEFAULT} element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path={RoutesList.HELP} element={<HelpPage />} />
-          <Route path={RoutesList.HOW_IT_WORKS} element={<HowItWorksPage />} />
-          <Route path={RoutesList.PARTNERS} element={<ForPartnersPage />} />
-          <Route path={RoutesList.NOT_FOUND} element={<NotFoundPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path={RoutesList.DEFAULT} element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path={RoutesList.HELP} element={<HelpPage />} />
+            <Route
+              path={RoutesList.HOW_IT_WORKS}
+              element={<HowItWorksPage />}
+            />
+            <Route path={RoutesList.PARTNERS} element={<ForPartnersPage />} />
+            <Route path={RoutesList.NOT_FOUND} element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

@@ -15,4 +15,14 @@
   &__user-avatar {
     border-radius: 50%;
   }
+
+  &__user-name {
+    &--light {
+      color: var(--white);
+    }
+  
+    &--dark {
+      color: var(--default-dark);
+    }
+  }
 }

@@ -1,8 +1,8 @@
 <svg display="none">
-  <symbol id="sunny" viewBox="0 0 40 40" fill="none"
+  <symbol id="sunny" viewBox="0 0 40 40"
     xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#filter0_d_0_2183)">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M20 30C25.5228 30 30 25.5228 30 20C30 14.4772 25.5228 10 20 10C14.4772 10 10 14.4772 10 20C10 25.5228 14.4772 30 20 30Z" fill="white"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M20 30C25.5228 30 30 25.5228 30 20C30 14.4772 25.5228 10 20 10C14.4772 10 10 14.4772 10 20C10 25.5228 14.4772 30 20 30Z"/>
     </g>
     <defs>
       <filter id="filter0_d_0_2183" x="0" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

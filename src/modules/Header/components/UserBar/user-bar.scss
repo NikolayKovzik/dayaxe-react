@@ -1,4 +1,5 @@
 @use "../../../../styles/mixins/breakpoints.scss" as bp;
+@use "../../../../styles/utils/variables.scss" as var;
 
 .header {
   &__user-info {
@@ -11,7 +12,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      color: var(--white);
+      color: var.$white;
     }
   }
 
@@ -21,11 +22,11 @@
 
   &__user-name {
     &--light {
-      color: var(--white);
+      color: var.$white;
     }
   
     &--dark {
-      color: var(--default-dark);
+      color: var.$default-dark;
     }
   }
 }

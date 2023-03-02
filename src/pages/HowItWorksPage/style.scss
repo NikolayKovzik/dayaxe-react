@@ -1,5 +1,7 @@
+@use "../../styles/utils/variables.scss" as var;
+
 .how-it-works-page {
-  background-color: var(--how-it-works-bg);
+  background-color: var.$how-it-works-bg;
   height: 100vh;
   width: 100vw;
 

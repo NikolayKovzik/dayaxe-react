@@ -64,6 +64,10 @@
       border-radius: 100px;
     }
 
+    &:hover {
+      font-weight: bold;
+    }
+
     &--active {
       font-weight: bold;
 

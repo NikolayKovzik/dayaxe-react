@@ -1,24 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.scss";
 import { NavBarProps } from "./models";
 
 function NavBar({ items }: NavBarProps) {
-  const [activeLinkNumber, setActiveLinkNumber] = useState(0);
   return (
     <nav className="header__menu">
       <ul className="header__menu-list">
-        {items.map((item, index) => {
+        {items.map((item) => {
           return (
             <li className="header__menu-item">
               <NavLink
                 to={item.link}
-                className={`${
-                  index === activeLinkNumber
+                className={({ isActive }) =>
+                  isActive
                     ? "header__menu-link header__menu-link--active"
                     : "header__menu-link"
-                }`}
-                onClick={() => setActiveLinkNumber(index)}
+                }
               >
                 {item.content}
               </NavLink>

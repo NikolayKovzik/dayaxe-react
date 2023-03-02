@@ -1,8 +1,11 @@
+@use "../../../../styles/mixins/breakpoints.scss" as bp;
+
 .header {
   &__user-info {
     display: none;
     cursor: pointer;
-    @media (min-width: 768px) {
+
+    @include bp.tablet {
       width: 172px;
 
       display: flex;

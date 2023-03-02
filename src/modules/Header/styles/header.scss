@@ -1,3 +1,5 @@
+@use "../../../styles/mixins/breakpoints.scss" as bp;
+
 .header {
   position: absolute;
   top: 0;
@@ -14,11 +16,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @media (min-width: 768px) {
+    
+    @include bp.tablet {
       padding-left: 42px;
       padding-right: 42px;
-    }
+    } 
   }
 
   &__inner {
@@ -27,11 +29,11 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (min-width: 768px) {
+    @include bp.tablet {
       width: 425px;
     }
 
-    @media (min-width: 1024px) {
+    @include bp.laptop {
       width: 750px;
     }
   }

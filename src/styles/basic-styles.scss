@@ -1,3 +1,5 @@
+@use "../styles/mixins/breakpoints.scss" as bp;
+
 * {
   font-family: "Gilroy";
   box-sizing: border-box;
@@ -73,11 +75,13 @@ button {
 
   padding-right: 24px;
   padding-left: 24px;
-  @media (min-width: 768px) {
+
+  @include bp.tablet {
     padding-right: 40px;
     padding-left: 40px;
   }
-  @media (min-width: 1024px) {
+
+  @include bp.laptop {
     padding-right: 156px;
     padding-left: 156px;
   }

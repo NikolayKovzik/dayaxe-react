@@ -1,8 +1,10 @@
+@use "../../../../styles/mixins/breakpoints.scss" as bp;
+
 .header {
   &__menu {
     display: none;
   
-    @media (min-width: 1024px) {
+    @include bp.laptop {
       display: block;
     }
   

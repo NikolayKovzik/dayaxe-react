@@ -5,10 +5,10 @@
     height: 540px;
     padding-top: 100px;
 
-    background-image: url("../assets/images/first-section-background.png");
+    background-image: url("../assets/images/first-section-background.jpg");
     background-repeat: no-repeat;
-    background-position: -200px 0px;
-    background-size: 1135px;
+    background-position: -630px 0px;
+    background-size: 2060px;
     
     @media (max-width: 320px) {
       height: auto;
@@ -18,17 +18,18 @@
     @media (min-width: 768px) {
       height: 904px - 240px;
       padding-top: 240px;
-      background-position: -182px 0px;
-      background-size: 1447px;
+      background-position: -900px 0px;
+      background-size: 2900px;
     }
     
     @media (min-width: 1024px) {
       height: 800px - 240px;
-      background-position: 0px 0px;
+      background-position: -560px 0px;
+      background-size: 2560px;
     }
 
     @media (min-width: 1440px) {
-      box-shadow: inset 0px -70px 70px 120px  var(--default-dark);
+      box-shadow: inset 0px 0px 100px 30px  var(--default-dark);
     }
   }
 

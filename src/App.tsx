@@ -22,8 +22,8 @@ function App() {
               element={<HowItWorksPage />}
             />
             <Route path={RoutesList.PARTNERS} element={<ForPartnersPage />} />
-            <Route path={RoutesList.NOT_FOUND} element={<NotFoundPage />} />
           </Route>
+          <Route path={RoutesList.NOT_FOUND} element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

@@ -16,17 +16,19 @@
   
     &-link {
       color: var(--white);
-  
-      &:hover {
-        border-bottom: 2px solid var(--white);
-      }
 
       &--light {
         color: var(--white);
+        &:hover {
+          border-bottom: 2px solid var(--white);
+        }
       }
     
       &--dark {
         color: var(--default-dark);
+        &:hover {
+          border-bottom: 2px solid var(--default-dark);
+        }
       }
 
       &--active {

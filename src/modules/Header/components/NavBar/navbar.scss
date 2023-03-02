@@ -16,6 +16,19 @@
   
     &-link {
       color: var(--white);
+  
+      &:hover {
+        border-bottom: 2px solid var(--white);
+      }
+
+      &--active {
+        font-weight: bold;
+
+        &:hover {
+          border-bottom: none;
+          cursor: default;
+        }
+      }
     }
   }
 }

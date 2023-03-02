@@ -8,6 +8,7 @@ import Hamburger from "./components/Hamburger";
 import UserBar from "./components/UserBar";
 import RoutesList from "../../routes";
 import classes from "./utils/headerClassList";
+import navBaritems from "./utils/navBarItems";
 
 function Header() {
   const location = useLocation();
@@ -30,7 +31,7 @@ function Header() {
         </NavLink>
         <div className="header__inner">
           <Weather degrees={90} sky="Sunny" spriteId="sunny" />
-          <NavBar />
+          <NavBar items={navBaritems} />
           <UserBar name="Roboin Bobin B." src="user-avatar.png" />
           <Hamburger />
         </div>

@@ -1,0 +1,26 @@
+@use "../../../../styles/mixins/breakpoints.scss" as bp;
+
+.search-form {
+  &__input-section {
+    &-inner {
+      width: 100%;
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      @include bp.tablet {
+        padding: 0px 20px;
+      }
+    }
+  
+    &-label {
+      display: block;
+    }
+  }
+
+  &__location {
+    width: 14px;
+    height: 18px;
+  }
+}

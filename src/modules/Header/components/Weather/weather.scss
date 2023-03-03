@@ -1,0 +1,36 @@
+@use "../../../../styles/mixins/breakpoints.scss" as bp;
+@use "../../../../styles/utils/variables.scss" as var;
+
+.weather {
+  display: none;
+
+  &--light {
+    color: var.$white;
+  }
+
+  &--dark {
+    color: var.$default-dark;
+  }
+
+  @include bp.tablet {
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    &__icon {
+      width: 37px;
+      height: 37px;
+
+      &--light {
+        fill: var.$white;
+      }
+
+      &--dark {
+        fill: var.$default-dark;
+      }
+    }
+  }
+}

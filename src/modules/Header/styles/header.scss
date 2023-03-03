@@ -1,0 +1,60 @@
+@use "../../../styles/mixins/breakpoints.scss" as bp;
+@use "../../../styles/utils/variables.scss" as var;
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__container {
+    height: 100px;
+    max-width: 1356px;  // minus paddings
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @include bp.tablet {
+      padding-left: 42px;
+      padding-right: 42px;
+    } 
+  }
+
+  &__inner {
+    height: 80px; //40px
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include bp.tablet {
+      width: 425px;
+    }
+
+    @include bp.laptop {
+      width: 750px;
+    }
+  }
+
+  &__logo {
+    width: 140px;
+    height: 32px;
+    
+    &--light {
+      fill: var.$white;
+    }
+    
+    &--dark {
+      fill: var.$default-dark;
+    }
+  }
+}
+
+
+
+
+
+

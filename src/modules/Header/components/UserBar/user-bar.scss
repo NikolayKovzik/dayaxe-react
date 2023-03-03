@@ -1,0 +1,32 @@
+@use "../../../../styles/mixins/breakpoints.scss" as bp;
+@use "../../../../styles/utils/variables.scss" as var;
+
+.header {
+  &__user-info {
+    display: none;
+    cursor: pointer;
+
+    @include bp.tablet {
+      width: 172px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var.$white;
+    }
+  }
+
+  &__user-avatar {
+    border-radius: 50%;
+  }
+
+  &__user-name {
+    &--light {
+      color: var.$white;
+    }
+  
+    &--dark {
+      color: var.$default-dark;
+    }
+  }
+}

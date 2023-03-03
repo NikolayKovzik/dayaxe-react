@@ -1,5 +1,7 @@
+@use "../../styles/utils/variables.scss" as var;
+
 .for-partners-page {
-  background-color: var(--for-partners-bg);
+  background-color: var.$for-partners-bg;
   height: 100vh;
   width: 100vw;
 

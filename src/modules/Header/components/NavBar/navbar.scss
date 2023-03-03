@@ -1,8 +1,11 @@
+@use "../../../../styles/mixins/breakpoints.scss" as bp;
+@use "../../../../styles/utils/variables.scss" as var;
+
 .header {
   &__menu {
     display: none;
   
-    @media (min-width: 1024px) {
+    @include bp.laptop {
       display: block;
     }
   
@@ -15,19 +18,19 @@
     }
   
     &-link {
-      color: var(--white);
+      color: var.$white;
 
       &--light {
-        color: var(--white);
+        color: var.$white;
         &:hover {
-          border-bottom: 2px solid var(--white);
+          border-bottom: 2px solid var.$white;
         }
       }
     
       &--dark {
-        color: var(--default-dark);
+        color: var.$default-dark;
         &:hover {
-          border-bottom: 2px solid var(--default-dark);
+          border-bottom: 2px solid var.$default-dark;
         }
       }
 

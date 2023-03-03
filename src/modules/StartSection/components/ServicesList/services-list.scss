@@ -1,3 +1,6 @@
+@use "../../../../styles/mixins/breakpoints.scss" as bp;
+@use "../../../../styles/utils/variables.scss" as var;
+
 .search {
   &__services-list {
     width: 75%;
@@ -10,7 +13,7 @@
     column-gap: 20px;
     row-gap: 10px;
 
-    @media (min-width: 768px) {
+    @include bp.tablet {
       width: 100%;
       margin: 0px 0px 30px;
 
@@ -18,13 +21,13 @@
       justify-content: flex-start;
     }
 
-    @media (min-width: 1440px) {
+    @include bp.laptop-l {
       column-gap: 5px;
     }
   }
 
   &__service-item {
-    @media (min-width: 1024px) {
+    @include bp.laptop {
       &:nth-child(1) .search__service-btn {
         width: 45px;
       }
@@ -54,13 +57,13 @@
 
     font-size: 16px;
     line-height: 16px;
-    color: var(--white);
+    color: var.$white;
 
-    @media (min-width: 1024px) {
+    @include bp.laptop {
       height: 27px;
 
-      background: var(--white);
-      color: var(--grey);
+      background: var.$white;
+      color: var.$grey;
       border-radius: 100px;
     }
 
@@ -71,8 +74,8 @@
     &--active {
       font-weight: bold;
 
-      @media (min-width: 1024px) {
-        color: var(--default-dark);
+      @include bp.laptop {
+        color: var.$default-dark;
       }
     }
   }

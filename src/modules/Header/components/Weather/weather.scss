@@ -1,15 +1,18 @@
+@use "../../../../styles/mixins/breakpoints.scss" as bp;
+@use "../../../../styles/utils/variables.scss" as var;
+
 .weather {
   display: none;
 
   &--light {
-    color: var(--white);
+    color: var.$white;
   }
 
   &--dark {
-    color: var(--default-dark);
+    color: var.$default-dark;
   }
 
-  @media (min-width: 768px) {
+  @include bp.tablet {
     width: 150px;
 
     display: flex;
@@ -22,11 +25,11 @@
       height: 37px;
 
       &--light {
-        fill: var(--white);
+        fill: var.$white;
       }
 
       &--dark {
-        fill: var(--default-dark);
+        fill: var.$default-dark;
       }
     }
   }

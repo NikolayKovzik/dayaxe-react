@@ -1,8 +1,12 @@
+@use "../../../styles/mixins/breakpoints.scss" as bp;
+@use "../../../styles/utils/variables.scss" as var;
+
 .start-section {
-  background-color: var(--default-dark);
+  background-color: var.$default-dark;
 
   &__container {
-    height: 540px;
+    height: auto;
+    padding-bottom: 20px;
     padding-top: 100px;
 
     background-image: url("../assets/images/first-section-background.jpg");
@@ -10,26 +14,26 @@
     background-position: -630px 0px;
     background-size: 2060px;
     
-    @media (max-width: 320px) {
-      height: auto;
-      padding-bottom: 20px;
+    @include bp.mobile-s {
+      height: 540px;
+      padding-bottom: 0px;
     }
 
-    @media (min-width: 768px) {
+    @include bp.tablet {
       height: 904px - 240px;
       padding-top: 240px;
       background-position: -900px 0px;
       background-size: 2900px;
     }
     
-    @media (min-width: 1024px) {
+    @include bp.laptop {
       height: 800px - 240px;
       background-position: -560px 0px;
       background-size: 2560px;
     }
 
-    @media (min-width: 1440px) {
-      box-shadow: inset 0px 0px 100px 30px  var(--default-dark);
+    @include bp.laptop-l {
+      box-shadow: inset 0px 0px 100px 30px  var.$default-dark;
     }
   }
 
@@ -39,9 +43,9 @@
     font-size: 36px;
     line-height: 36px;
     font-weight: bold;
-    color: var(--white);
+    color: var.$white;
 
-    @media (min-width: 768px) {
+    @include bp.tablet {
       margin-bottom: 105px;
       width: 399px;
 
@@ -49,7 +53,7 @@
       line-height: 56px;
     }
 
-    @media (min-width: 1024px) {
+    @include bp.laptop {
       line-height: 60px;
       width: 405px;
     }

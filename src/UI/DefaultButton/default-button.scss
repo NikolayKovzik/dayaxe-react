@@ -1,3 +1,5 @@
+@use "../../styles/utils/variables.scss" as var;
+
 .default-button {
   display: block;
   font-size: 16px;
@@ -5,16 +7,16 @@
   font-weight: bold;
 
   &--dark {
-    background: var(--default-dark);
-    background: linear-gradient(40deg, var(--default-dark) 0%, var(--btn-gradient) 100%);
+    background: var.$default-dark;
+    background: linear-gradient(40deg, var.$default-dark 0%, var.$btn-gradient 100%);
 
     border: none;
-    color: var(--white);
+    color: var.$white;
   }
 
   &--light {
     background: transparent;
-    border: 2px solid var(--default-light);
-    color: var(--default-light);
+    border: 2px solid var.$default-light;
+    color: var.$default-light;
   }
 }
